@@ -10,7 +10,8 @@ const port = process.env.PORT || 3000;
 const app = express();
 app.use(express.json());
 const allowedOrigins = [
-  /http:\/\/(127(\.\d){3}|localhost)/
+  /http:\/\/(127(\.\d){3}|localhost)/,
+  'https://ahmad1284.github.io/qr'
 ];
 app.use(cors({ origin: allowedOrigins }));
 app.options('*', cors());
