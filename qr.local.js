@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 const allowedOrigins = [
   /http:\/\/(127(\.\d){3}|localhost)/,
-  'https://ahmad1284.github.io/qr/'
+  'https://ahmad1284.github.io'
 ];
 app.use(cors({ origin: allowedOrigins }));
 app.options('*', cors());
